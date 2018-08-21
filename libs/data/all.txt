@@ -1,0 +1,22 @@
+[
+	{"imgSrc":"libs/image/mei01.jpg"},
+	{"imgSrc":"libs/image/mei02.jpg"},
+	{"imgSrc":"libs/image/mei03.jpg"},
+	{"imgSrc":"libs/image/mia01.jpg"},
+	{"imgSrc":"libs/image/carbeauty01.jpg"},
+	{"imgSrc":"libs/image/carbeauty02.jpg"},
+	{"imgSrc":"libs/image/carbeauty03.jpg"},
+	{"imgSrc":"libs/image/eds01.jpg"},
+	{"imgSrc":"libs/image/eds02.png"},
+	{"imgSrc":"libs/image/poster01.jpg"},
+	{"imgSrc":"libs/image/poster02.jpg"},
+	{"imgSrc":"libs/image/jingyong01.png"},
+	{"imgSrc":"libs/image/fishsea01.jpg"},
+	{"imgSrc":"libs/image/fishsea02-s.jpg"},
+	{"imgSrc":"libs/image/ancar01.jpg"},
+	{"imgSrc":"libs/image/ancar02.jpg"},
+	{"imgSrc":"libs/image/miao01.jpg"},
+	{"imgSrc":"libs/image/yihaobaobiao-6.jpg"},
+	{"imgSrc":"libs/image/yihaobaobiao-5.jpg"},
+	{"imgSrc":"libs/image/yihaobaobiao-4.jpg"}
+]

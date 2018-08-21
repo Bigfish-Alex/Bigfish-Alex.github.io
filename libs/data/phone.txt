@@ -1,0 +1,11 @@
+[
+	{"imgSrc":"libs/image/mia01.jpg"},
+	{"imgSrc":"libs/image/carbeauty01.jpg"},
+	{"imgSrc":"libs/image/carbeauty02.jpg"},
+	{"imgSrc":"libs/image/carbeauty03.jpg"},
+	{"imgSrc":"libs/image/fishsea01.jpg"},
+	{"imgSrc":"libs/image/fishsea02-s.jpg"},
+	{"imgSrc":"libs/image/ancar01.jpg"},
+	{"imgSrc":"libs/image/ancar02.jpg"},
+	{"imgSrc":"libs/image/miao01.jpg"}
+]

@@ -1,0 +1,9 @@
+[
+	{"imgSrc":"libs/image/yihaobaobiao-7.jpg"},
+	{"imgSrc":"libs/image/yihaobaobiao-6.jpg"},
+	{"imgSrc":"libs/image/yihaobaobiao-5.jpg"},
+	{"imgSrc":"libs/image/yihaobaobiao-4.jpg"},
+	{"imgSrc":"libs/image/yihaobaobiao-3.jpg"},
+	{"imgSrc":"libs/image/yihaobaobiao-2.jpg"},
+	{"imgSrc":"libs/image/yihaobaobiao-1.jpg"}
+]
