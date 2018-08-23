@@ -1,145 +1,659 @@
-* { padding: 0; margin: 0; font-family: "microsoft yahei"; }
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "microsoft yahei"; }
 
-a { color: #000; text-decoration: none; }
+a {
+  color: #000;
+  text-decoration: none; }
 
-ul { list-style: none; }
+ul {
+  list-style: none; }
 
-.clear { width: 100%; height: 5px; overflow: hidden; clear: both; }
+.clear {
+  width: 100%;
+  height: 5px;
+  overflow: hidden;
+  clear: both; }
 
-.clear20 { width: 100%; height: 20px; overflow: hidden; clear: both; }
+.clear20 {
+  width: 100%;
+  height: 20px;
+  overflow: hidden;
+  clear: both; }
 
-body { width: 100%; height: 100%; background: url(../image/background.png); }
+body {
+  width: 100%;
+  height: 100%;
+  background: url(../image/background.png); }
 
-.opacity { opacity: 0.9; }
+.opacity {
+  opacity: 0.9; }
 
-header { width: 100%; height: 80px; background: #4f4b5c; color: #ffffff; transition: all .4s; position: fixed; z-index: 10; }
-header .translate8 { transform: translateY(-8px); }
-header h1 { height: 80px; line-height: 80px; display: inline-block; margin-left: 2%; transition: all .4s; }
-header h1 span { color: #ed2c3d; }
-header .headerRight { width: 30%; height: 80px; float: right; position: relative; }
-header .headerRight ul { width: 80%; height: 30px; transition: all .4s; }
-header .headerRight ul li { width: 10%; height: 30px; background: #FFFFFF; float: left; margin-top: 20px; margin-right: 6%; border-radius: 5px; box-shadow: 0px 0px 13px 0px #000; cursor: pointer; text-align: center; color: #000000; line-height: 30px; }
-header .headerRight ul .li-shake { animation: shake .8s; }
-@keyframes shake { 0% { transform: rotate(15deg); }
-  20% { transform: rotate(-15deg); }
-  40% { transform: rotate(15deg); }
-  60% { transform: rotate(-15deg); }
-  80% { transform: rotate(15deg); }
-  100% { transform: rotate(-15deg); } }
-header .headerRight .infoBar { width: 30px; height: 0px; margin-top: 1px; background: #FFFFFF; position: absolute; top: 50px; border-radius: 5px; color: #000000; font-size: 12px; line-height: 18px; text-align: center; z-index: 20; }
-header .headerRight .redBar { width: 100%; height: 10px; background: #ed2c3d; position: absolute; bottom: 0px; transition: all .4s; }
+header {
+  width: 100%;
+  height: 80px;
+  background: #4f4b5c;
+  color: #ffffff;
+  transition: all .4s;
+  position: fixed;
+  z-index: 10; }
+  header .translate8 {
+    transform: translateY(-8px); }
+  header h1 {
+    height: 80px;
+    line-height: 80px;
+    display: inline-block;
+    margin-left: 2%;
+    transition: all .4s; }
+    header h1 span {
+      color: #ed2c3d; }
+  header .headerRight {
+    width: 30%;
+    height: 80px;
+    float: right;
+    position: relative; }
+    header .headerRight ul {
+      width: 80%;
+      height: 30px;
+      transition: all .4s; }
+      header .headerRight ul li {
+        width: 10%;
+        height: 30px;
+        background: #FFFFFF;
+        float: left;
+        margin-top: 20px;
+        margin-right: 6%;
+        border-radius: 5px;
+        box-shadow: 0px 0px 13px 0px #000;
+        cursor: pointer;
+        text-align: center;
+        color: #000000;
+        line-height: 30px; }
+      header .headerRight ul .li-shake {
+        animation: shake .8s; }
+@keyframes shake {
+  0% {
+    transform: rotate(15deg); }
+  20% {
+    transform: rotate(-15deg); }
+  40% {
+    transform: rotate(15deg); }
+  60% {
+    transform: rotate(-15deg); }
+  80% {
+    transform: rotate(15deg); }
+  100% {
+    transform: rotate(-15deg); } }
+    header .headerRight .infoBar {
+      width: 30px;
+      height: 0px;
+      margin-top: 1px;
+      background: #FFFFFF;
+      position: absolute;
+      top: 50px;
+      border-radius: 5px;
+      color: #000000;
+      font-size: 12px;
+      line-height: 18px;
+      text-align: center;
+      z-index: 20; }
+    header .headerRight .redBar {
+      width: 100%;
+      height: 10px;
+      background: #ed2c3d;
+      position: absolute;
+      bottom: 0px;
+      transition: all .4s; }
 
-.centerContainer { color: #4f4b5c; padding-top: 100px; height: 850px; width: 100%; }
-.centerContainer .leftBox { width: 60%; position: relative; float: left; }
-.centerContainer .leftBox .profileImg { width: 400px; height: 400px; border-radius: 100%; padding: 1px; border: 5px solid #4f4b5c; overflow: hidden; position: absolute; left: 30%; top: 160px; z-index: 2; background: #62616f; }
-.centerContainer .leftBox .profileImg img { width: 340px; position: absolute; top: 65px; left: 30px; }
-.centerContainer .leftBox .linkBall { width: 120px; height: 120px; text-align: center; line-height: 120px; font-size: 22px; border-radius: 100%; padding: 1px; border: 5px solid #4f4b5c; text-shadow: 1px 1px 1px #000000; cursor: pointer; }
-.centerContainer .leftBox .linkBall span { width: 100%; height: 22px; line-height: 22px; display: inline-block; -webkit-box-reflect: below 5px -webkit-linear-gradient(transparent, transparent 10%, rgba(255, 255, 255, 0.3)); }
-.centerContainer .leftBox .aboutMe { position: absolute; top: 30px; left: 25%; }
-.centerContainer .leftBox .collection { position: absolute; top: 160px; left: 10%; }
-.centerContainer .leftBox .myWork { position: absolute; top: 340px; left: 7%; }
-.centerContainer .leftBox .contactMe { position: absolute; top: 555px; left: 12%; }
-.centerContainer .leftBox .myWork { width: 110px; height: 110px; line-height: 110px; }
-.centerContainer .leftBox .linkBall:hover { background: #8dc360; color: #FFFFFF; }
-.centerContainer .leftBox .workNow { background: #8dc360; position: absolute; top: 160px; left: 69%; width: 270px; height: 70px; right: -120px; z-index: 1; border-radius: 0px 35px 35px 0px; transform: rotate(-20deg); }
-.centerContainer .leftBox .workNow span { float: right; color: #FFFFFF; font-size: 26px; display: inline-block; height: 70px; line-height: 70px; margin-right: 20px; }
-.centerContainer .leftBox .myName { position: absolute; width: 250px; top: 600px; left: 300px; font-size: 40px; }
-.centerContainer .leftBox .myName span { margin-right: 10px; }
-.centerContainer .leftBox .myName .name { color: #ed2c3d; }
-.centerContainer .leftBox .myName i { font-size: 20px; float: left; margin-left: 20px; color: #8dc360; }
-.centerContainer .leftBox .myName p { font-size: 18px; float: right; }
-.centerContainer .rightBox { width: 40%; float: right; }
-.centerContainer .rightBox .infoList { margin-top: 270px; }
-.centerContainer .rightBox .infoList li { margin-bottom: 20px; margin-left: 10px; }
-.centerContainer .rightBox .infoList li span { height: 20px; line-height: 20px; margin-right: 20px; }
-.centerContainer .rightBox button { width: 170px; height: 50px; text-align: center; line-height: 50px; background: #ed2c3d; color: #FFFFFF; border: none; border-radius: 25px; font-size: 16px; margin-top: 10px; outline: none; box-shadow: 0px 10px 30px -10px #ed2c3d; cursor: pointer; }
+.centerContainer {
+  color: #4f4b5c;
+  padding-top: 100px;
+  height: 850px;
+  width: 100%; }
+  .centerContainer .leftBox {
+    width: 60%;
+    position: relative;
+    float: left; }
+    .centerContainer .leftBox .profileImg {
+      width: 400px;
+      height: 400px;
+      border-radius: 100%;
+      padding: 1px;
+      border: 5px solid #4f4b5c;
+      overflow: hidden;
+      z-index: 2;
+      background: #62616f; }
+      .centerContainer .leftBox .profileImg img {
+        width: 340px;
+        margin: 65px 0px 0px 30px; }
+    .centerContainer .leftBox .outPreviewContainer {
+      width: 400px;
+      height: 400px;
+      position: absolute;
+      left: 30%;
+      top: 160px;
+      z-index: 2; }
+    .centerContainer .leftBox .linkBall {
+      width: 120px;
+      height: 120px;
+      text-align: center;
+      line-height: 120px;
+      font-size: 22px;
+      border-radius: 100%;
+      padding: 1px;
+      border: 5px solid #4f4b5c;
+      text-shadow: 1px 1px 1px #000000;
+      cursor: pointer; }
+      .centerContainer .leftBox .linkBall span {
+        width: 100%;
+        height: 22px;
+        line-height: 22px;
+        display: inline-block;
+        -webkit-box-reflect: below 5px -webkit-linear-gradient(transparent, transparent 10%, rgba(255, 255, 255, 0.3)); }
+    .centerContainer .leftBox .aboutMe {
+      position: absolute;
+      top: 30px;
+      left: 25%; }
+    .centerContainer .leftBox .collection {
+      position: absolute;
+      top: 160px;
+      left: 10%; }
+    .centerContainer .leftBox .myWork {
+      position: absolute;
+      top: 340px;
+      left: 7%; }
+    .centerContainer .leftBox .contactMe {
+      position: absolute;
+      top: 555px;
+      left: 12%; }
+    .centerContainer .leftBox .myWork {
+      width: 110px;
+      height: 110px;
+      line-height: 110px; }
+    .centerContainer .leftBox .linkBall:hover {
+      background: #8dc360;
+      color: #FFFFFF; }
+    .centerContainer .leftBox .workNow {
+      background: #8dc360;
+      position: absolute;
+      top: 50px;
+      left: 85%;
+      width: 270px;
+      height: 70px;
+      right: -120px;
+      z-index: -1;
+      border-radius: 0px 35px 35px 0px;
+      transform: rotate(-20deg); }
+      .centerContainer .leftBox .workNow span {
+        float: right;
+        color: #FFFFFF;
+        font-size: 26px;
+        display: inline-block;
+        height: 70px;
+        line-height: 70px;
+        margin-right: 20px; }
+    .centerContainer .leftBox .myName {
+      position: absolute;
+      width: 250px;
+      top: 600px;
+      left: 300px;
+      font-size: 40px; }
+      .centerContainer .leftBox .myName span {
+        margin-right: 10px; }
+      .centerContainer .leftBox .myName .name {
+        color: #ed2c3d; }
+      .centerContainer .leftBox .myName i {
+        font-size: 20px;
+        float: left;
+        margin-left: 20px;
+        color: #8dc360; }
+      .centerContainer .leftBox .myName p {
+        font-size: 18px;
+        float: right; }
+  .centerContainer .rightBox {
+    width: 40%;
+    float: right; }
+    .centerContainer .rightBox .infoList {
+      margin-top: 270px; }
+      .centerContainer .rightBox .infoList li {
+        margin-bottom: 20px;
+        margin-left: 10px; }
+        .centerContainer .rightBox .infoList li span {
+          height: 20px;
+          line-height: 20px;
+          margin-right: 20px; }
+    .centerContainer .rightBox button {
+      width: 170px;
+      height: 50px;
+      text-align: center;
+      line-height: 50px;
+      background: #ed2c3d;
+      color: #FFFFFF;
+      border: none;
+      border-radius: 25px;
+      font-size: 16px;
+      margin-top: 10px;
+      outline: none;
+      box-shadow: 0px 10px 30px -10px #ed2c3d;
+      cursor: pointer; }
 
-.aboutMeBox { width: 100%; text-align: center; }
-.aboutMeBox .aboutMeBoxHeader { width: 100%; height: 80px; text-align: left; }
-.aboutMeBox .aboutMeBoxHeader h2 { display: inline-block; margin-top: 47px; margin-left: 65px; color: #ed2c3d; font-weight: bold; font-size: 26px; margin-right: 10px; }
-.aboutMeBox .aboutMeBoxHeader span { color: #abb0ac; }
-.aboutMeBox h4 { width: 100%; height: 100px; line-height: 100px; text-align: center; font-size: 24px; color: #ed2c3d; margin: 10px 0px 15px 0px; }
-.aboutMeBox .canDoList { width: 100%; }
-.aboutMeBox .canDoList li { float: left; width: 16%; height: 210px; margin-left: 4%; background: #f7f7f7; text-align: center; color: #4f4b5c; padding: 2%; border-bottom: 3px solid #ababab; }
-.aboutMeBox .canDoList li span { font-size: 30px; }
-.aboutMeBox .canDoList li h5 { font-weight: normal; margin-top: 8px; text-align: center; }
-.aboutMeBox .canDoList li i { font-style: normal; font-size: 10px; color: #ed2c3d; text-shadow: 0px 1px 1px #ed2c3d; }
-.aboutMeBox .canDoList li p { font-size: 12px; width: 90%; margin: 5px auto; }
-.aboutMeBox .canDoList li p span { font-size: 16px; color: #8DC360; }
-.aboutMeBox .canDoList li h6 { font-size: 22px; position: relative; top: 10px; }
-.aboutMeBox h3 { width: 100%; height: 22px; line-height: 22px; text-align: center; margin-top: 80px; font-size: 28px; color: #ed2c3d; }
-.aboutMeBox h5 { text-align: left; margin-left: 3.7%; }
-.aboutMeBox p { font-size: 14px; margin-bottom: 20px; }
-.aboutMeBox .skillsBox { text-align: left; width: 46%; height: 50px; float: left; margin-left: 0.7%; margin-top: 10px; padding-left: 3%; }
-.aboutMeBox .skillsBox p { color: #000000; font-size: 14px; font-weight: bold; margin-top: 3px; text-indent: 5px; }
-.aboutMeBox .skillsBox span { float: right; margin-right: 10%; }
-.aboutMeBox .skillsBox .precentBox { width: 90%; height: 12px; border: 1px solid #000000; border-radius: 16px; margin-top: 10px; }
-.aboutMeBox .skillsBox .precent { width: 0%; height: 12px; border-radius: 16px; background: #ed2c3d; }
-.aboutMeBox .listBox { width: 100%; height: 50px; margin-top: 80px; }
-.aboutMeBox .listBox .skillsList { width: 90%; height: 50px; margin: 0 auto; text-align: center; clear: both; overflow: hidden; }
-.aboutMeBox .listBox .skillsList li { display: inline-block; width: 50px; height: 50px; line-height: 50px; margin-left: 2%; }
-.aboutMeBox .listBox .skillsList li img { width: 50px; cursor: pointer; }
+.aboutMeBox {
+  width: 100%;
+  text-align: center; }
+  .aboutMeBox .aboutMeBoxHeader {
+    width: 100%;
+    height: 80px;
+    text-align: left; }
+    .aboutMeBox .aboutMeBoxHeader h2 {
+      display: inline-block;
+      margin-top: 47px;
+      margin-left: 65px;
+      color: #ed2c3d;
+      font-weight: bold;
+      font-size: 26px;
+      margin-right: 10px; }
+    .aboutMeBox .aboutMeBoxHeader span {
+      color: #abb0ac; }
+  .aboutMeBox h4 {
+    width: 100%;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    font-size: 24px;
+    color: #ed2c3d;
+    margin: 10px 0px 15px 0px; }
+  .aboutMeBox .canDoList {
+    width: 100%; }
+    .aboutMeBox .canDoList li {
+      float: left;
+      width: 16%;
+      height: 210px;
+      margin-left: 4%;
+      background: #f7f7f7;
+      text-align: center;
+      color: #4f4b5c;
+      padding: 2%;
+      border-bottom: 3px solid #ababab; }
+      .aboutMeBox .canDoList li span {
+        font-size: 30px; }
+      .aboutMeBox .canDoList li h5 {
+        font-weight: normal;
+        margin-top: 8px;
+        text-align: center; }
+      .aboutMeBox .canDoList li i {
+        font-style: normal;
+        font-size: 10px;
+        color: #ed2c3d;
+        text-shadow: 0px 1px 1px #ed2c3d; }
+      .aboutMeBox .canDoList li p {
+        font-size: 12px;
+        width: 90%;
+        margin: 5px auto; }
+        .aboutMeBox .canDoList li p span {
+          font-size: 16px;
+          color: #8DC360; }
+      .aboutMeBox .canDoList li h6 {
+        font-size: 22px;
+        position: relative;
+        top: 10px; }
+  .aboutMeBox h3 {
+    width: 100%;
+    height: 22px;
+    line-height: 22px;
+    text-align: center;
+    margin-top: 80px;
+    font-size: 28px;
+    color: #ed2c3d; }
+  .aboutMeBox h5 {
+    text-align: left;
+    margin-left: 3.7%; }
+  .aboutMeBox p {
+    font-size: 14px;
+    margin-bottom: 20px; }
+  .aboutMeBox .skillsBox {
+    text-align: left;
+    width: 46%;
+    height: 50px;
+    float: left;
+    margin-left: 0.7%;
+    margin-top: 10px;
+    padding-left: 3%; }
+    .aboutMeBox .skillsBox p {
+      color: #000000;
+      font-size: 14px;
+      font-weight: bold;
+      margin-top: 3px;
+      text-indent: 5px; }
+    .aboutMeBox .skillsBox span {
+      float: right;
+      margin-right: 10%; }
+    .aboutMeBox .skillsBox .precentBox {
+      width: 90%;
+      height: 12px;
+      border: 1px solid #000000;
+      border-radius: 16px;
+      margin-top: 10px; }
+    .aboutMeBox .skillsBox .precent {
+      width: 0%;
+      height: 12px;
+      border-radius: 16px;
+      background: #ed2c3d; }
+  .aboutMeBox .listBox {
+    width: 100%;
+    height: 50px;
+    margin-top: 80px; }
+    .aboutMeBox .listBox .skillsList {
+      width: 90%;
+      height: 50px;
+      margin: 0 auto;
+      text-align: center;
+      clear: both;
+      overflow: hidden; }
+      .aboutMeBox .listBox .skillsList li {
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        margin-left: 2%; }
+        .aboutMeBox .listBox .skillsList li img {
+          width: 50px;
+          cursor: pointer; }
 
-.experience { width: 100%; text-align: center; }
-.experience .experienceHeader { width: 100%; height: 80px; text-align: left; }
-.experience .experienceHeader h2 { display: inline-block; margin-top: 47px; margin-left: 65px; color: #ed2c3d; font-weight: bold; font-size: 26px; margin-right: 10px; }
-.experience .experienceHeader span { color: #abb0ac; }
-.experience h4 { width: 100%; height: 24px; line-height: 24px; text-align: center; font-size: 24px; color: #ed2c3d; margin: 50px 0px 0px 0px; }
-.experience .experienceBox { width: 100%; margin-top: 50px; }
-.experience .experienceBox .experienceBoxLeft, .experience .experienceBox .experienceBoxCenter, .experience .experienceBox .experienceBoxRight { float: left; }
-.experience .experienceBox .experienceBoxLeft { width: 15%; }
-.experience .experienceBox .experienceBoxLeft h5 { transform: rotate(-90deg); font-size: 26px; color: #4f4b5c; margin-top: 300px; }
-.experience .experienceBox .experienceBoxCenter { width: 70%; padding-top: 100px; }
-.experience .experienceBox .experienceBoxCenter .collegeBox { width: 50%; float: left; }
-.experience .experienceBox .experienceBoxCenter .collegeBox .collegeContent { width: 80%; height: 180px; border-top: 4px solid #4f4b5c; border-left: 4px solid #4f4b5c; float: right; position: relative; text-align: left; margin-bottom: 120px; }
-.experience .experienceBox .experienceBoxCenter .collegeBox .collegeContent .numBox { position: absolute; width: 80px; height: 80px; line-height: 80px; border: 4px solid #4f4b5c; background: #FFFFFF; top: -45px; left: -45px; font-size: 22px; font-weight: bold; color: #4f4b5c; text-align: center; }
-.experience .experienceBox .experienceBoxCenter .collegeBox .collegeContent h5 { text-indent: 60px; color: #4f4b5c; font-size: 22px; margin-top: 5px; }
-.experience .experienceBox .experienceBoxCenter .collegeBox .collegeContent h6 { margin-top: 45px; text-indent: 15px; font-size: 16px; color: #4f4b5c; }
-.experience .experienceBox .experienceBoxCenter .collegeBox .collegeContent p { text-indent: 15px; font-size: 12px; color: #abb0ac; margin-top: 10px; margin-left: 15px; }
-.experience .experienceBox .experienceBoxCenter .collegeBox .collegeContent:after { content: ""; width: 20px; height: 20px; border-radius: 100%; position: absolute; right: -8px; top: -12px; background: #4f4b5c; }
-.experience .experienceBox .experienceBoxCenter .societyBox { width: 50%; float: left; }
-.experience .experienceBox .experienceBoxCenter .societyBox .societyContent { width: 80%; height: 180px; border-bottom: 4px solid #ed2c3d; border-right: 4px solid #ed2c3d; float: right; position: relative; text-align: left; margin-bottom: 120px; }
-.experience .experienceBox .experienceBoxCenter .societyBox .societyContent .numBox { position: absolute; width: 80px; height: 80px; line-height: 80px; border: 4px solid #ed2c3d; background: #FFFFFF; bottom: -45px; right: -45px; font-size: 22px; font-weight: bold; color: #ed2c3d; text-align: center; }
-.experience .experienceBox .experienceBoxCenter .societyBox .societyContent h5 { text-indent: 60px; color: #ed2c3d; font-size: 22px; position: absolute; bottom: 5px; right: 60px; }
-.experience .experienceBox .experienceBoxCenter .societyBox .societyContent h6 { margin-top: 5px; text-indent: 15px; font-size: 16px; color: #ed2c3d; }
-.experience .experienceBox .experienceBoxCenter .societyBox .societyContent p { text-indent: 15px; font-size: 12px; color: #abb0ac; margin-top: 10px; margin-left: 15px; }
-.experience .experienceBox .experienceBoxCenter .societyBox .societyContent:after { content: ""; width: 20px; height: 20px; border-radius: 100%; position: absolute; left: -8px; bottom: -12px; background: #ed2c3d; }
-.experience .experienceBox .experienceBoxRight { width: 15%; }
-.experience .experienceBox .experienceBoxRight h5 { transform: rotate(-90deg); font-size: 26px; color: #ed2c3d; margin-top: 300px; }
+.experience {
+  width: 100%;
+  text-align: center; }
+  .experience .experienceHeader {
+    width: 100%;
+    height: 80px;
+    text-align: left; }
+    .experience .experienceHeader h2 {
+      display: inline-block;
+      margin-top: 47px;
+      margin-left: 65px;
+      color: #ed2c3d;
+      font-weight: bold;
+      font-size: 26px;
+      margin-right: 10px; }
+    .experience .experienceHeader span {
+      color: #abb0ac; }
+  .experience h4 {
+    width: 100%;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    font-size: 24px;
+    color: #ed2c3d;
+    margin: 50px 0px 0px 0px; }
+  .experience .experienceBox {
+    width: 100%;
+    margin-top: 50px; }
+    .experience .experienceBox .experienceBoxLeft,
+    .experience .experienceBox .experienceBoxCenter,
+    .experience .experienceBox .experienceBoxRight {
+      float: left; }
+    .experience .experienceBox .experienceBoxLeft {
+      width: 15%; }
+      .experience .experienceBox .experienceBoxLeft h5 {
+        transform: rotate(-90deg);
+        font-size: 26px;
+        color: #4f4b5c;
+        margin-top: 300px; }
+    .experience .experienceBox .experienceBoxCenter {
+      width: 70%;
+      padding-top: 100px; }
+      .experience .experienceBox .experienceBoxCenter .collegeBox {
+        width: 50%;
+        float: left; }
+        .experience .experienceBox .experienceBoxCenter .collegeBox .collegeContent {
+          width: 80%;
+          height: 180px;
+          border-top: 4px solid #4f4b5c;
+          border-left: 4px solid #4f4b5c;
+          float: right;
+          position: relative;
+          text-align: left;
+          margin-bottom: 120px; }
+          .experience .experienceBox .experienceBoxCenter .collegeBox .collegeContent .numBox {
+            position: absolute;
+            width: 80px;
+            height: 80px;
+            line-height: 80px;
+            border: 4px solid #4f4b5c;
+            background: #FFFFFF;
+            top: -45px;
+            left: -45px;
+            font-size: 22px;
+            font-weight: bold;
+            color: #4f4b5c;
+            text-align: center; }
+          .experience .experienceBox .experienceBoxCenter .collegeBox .collegeContent h5 {
+            text-indent: 60px;
+            color: #4f4b5c;
+            font-size: 22px;
+            margin-top: 5px; }
+          .experience .experienceBox .experienceBoxCenter .collegeBox .collegeContent h6 {
+            margin-top: 45px;
+            text-indent: 15px;
+            font-size: 16px;
+            color: #4f4b5c; }
+          .experience .experienceBox .experienceBoxCenter .collegeBox .collegeContent p {
+            text-indent: 15px;
+            font-size: 12px;
+            color: #abb0ac;
+            margin-top: 10px;
+            margin-left: 15px; }
+        .experience .experienceBox .experienceBoxCenter .collegeBox .collegeContent:after {
+          content: "";
+          width: 20px;
+          height: 20px;
+          border-radius: 100%;
+          position: absolute;
+          right: -8px;
+          top: -12px;
+          background: #4f4b5c; }
+      .experience .experienceBox .experienceBoxCenter .societyBox {
+        width: 50%;
+        float: left; }
+        .experience .experienceBox .experienceBoxCenter .societyBox .societyContent {
+          width: 80%;
+          height: 180px;
+          border-bottom: 4px solid #ed2c3d;
+          border-right: 4px solid #ed2c3d;
+          float: right;
+          position: relative;
+          text-align: left;
+          margin-bottom: 120px; }
+          .experience .experienceBox .experienceBoxCenter .societyBox .societyContent .numBox {
+            position: absolute;
+            width: 80px;
+            height: 80px;
+            line-height: 80px;
+            border: 4px solid #ed2c3d;
+            background: #FFFFFF;
+            bottom: -45px;
+            right: -45px;
+            font-size: 22px;
+            font-weight: bold;
+            color: #ed2c3d;
+            text-align: center; }
+          .experience .experienceBox .experienceBoxCenter .societyBox .societyContent h5 {
+            text-indent: 60px;
+            color: #ed2c3d;
+            font-size: 22px;
+            position: absolute;
+            bottom: 5px;
+            right: 60px; }
+          .experience .experienceBox .experienceBoxCenter .societyBox .societyContent h6 {
+            margin-top: 5px;
+            text-indent: 15px;
+            font-size: 16px;
+            color: #ed2c3d; }
+          .experience .experienceBox .experienceBoxCenter .societyBox .societyContent p {
+            text-indent: 15px;
+            font-size: 12px;
+            color: #abb0ac;
+            margin-top: 10px;
+            margin-left: 15px; }
+        .experience .experienceBox .experienceBoxCenter .societyBox .societyContent:after {
+          content: "";
+          width: 20px;
+          height: 20px;
+          border-radius: 100%;
+          position: absolute;
+          left: -8px;
+          bottom: -12px;
+          background: #ed2c3d; }
+    .experience .experienceBox .experienceBoxRight {
+      width: 15%; }
+      .experience .experienceBox .experienceBoxRight h5 {
+        transform: rotate(-90deg);
+        font-size: 26px;
+        color: #ed2c3d;
+        margin-top: 300px; }
 
-.portfolio { width: 100%; text-align: center; }
-.portfolio .portfolioHeader { width: 100%; height: 80px; text-align: left; }
-.portfolio .portfolioHeader h2 { display: inline-block; margin-top: 47px; margin-left: 65px; color: #ed2c3d; font-weight: bold; font-size: 26px; margin-right: 10px; }
-.portfolio .portfolioHeader span { color: #abb0ac; }
-.portfolio h4 { width: 100%; height: 24px; line-height: 24px; text-align: center; font-size: 24px; color: #ed2c3d; margin: 50px 0px 0px 0px; }
-.portfolio .classifyShow { width: 100%; margin-top: 40px; margin-bottom: 40px; }
-.portfolio .classifyShow button { width: 150px; height: 50px; border: 1px solid #abb0ac; background: #FFFFFF; border-radius: 50px; margin-left: 2%; color: #abb0ac; cursor: pointer; outline: none; transition: all .5s; }
-.portfolio .classifyShow .hover { background: #ed2c3d; color: #FFFFFF; border: none; }
-.portfolio .waterfallBox { width: 100%; }
-.portfolio .waterfallBox .container-fluid { padding: 1%; }
-.portfolio .waterfallBox .container-fluid img { float: left; width: 31.4%; margin-left: 1%; margin-bottom: 20px; box-shadow: 0px 0px 34px -16px #000000; }
-.portfolio .waterfallBox .container-fluid .gigante { width: 50%; }
+.portfolio {
+  width: 100%;
+  text-align: center; }
+  .portfolio .portfolioHeader {
+    width: 100%;
+    height: 80px;
+    text-align: left; }
+    .portfolio .portfolioHeader h2 {
+      display: inline-block;
+      margin-top: 47px;
+      margin-left: 65px;
+      color: #ed2c3d;
+      font-weight: bold;
+      font-size: 26px;
+      margin-right: 10px; }
+    .portfolio .portfolioHeader span {
+      color: #abb0ac; }
+  .portfolio h4 {
+    width: 100%;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    font-size: 24px;
+    color: #ed2c3d;
+    margin: 50px 0px 0px 0px; }
+  .portfolio .classifyShow {
+    width: 100%;
+    margin-top: 40px;
+    margin-bottom: 40px; }
+    .portfolio .classifyShow button {
+      width: 150px;
+      height: 50px;
+      border: 1px solid #abb0ac;
+      background: #FFFFFF;
+      border-radius: 50px;
+      margin-left: 2%;
+      color: #abb0ac;
+      cursor: pointer;
+      outline: none;
+      transition: all .5s; }
+    .portfolio .classifyShow .hover {
+      background: #ed2c3d;
+      color: #FFFFFF;
+      border: none; }
+  .portfolio .waterfallBox {
+    width: 100%; }
+    .portfolio .waterfallBox .container-fluid {
+      padding: 1%; }
+      .portfolio .waterfallBox .container-fluid img {
+        float: left;
+        width: 31.4%;
+        margin-left: 1%;
+        margin-bottom: 20px;
+        box-shadow: 0px 0px 34px -16px #000000; }
+      .portfolio .waterfallBox .container-fluid .gigante {
+        width: 50%; }
 
-.contactMeBox { width: 100%; text-align: center; }
-.contactMeBox .aboutMeBoxHeader { width: 100%; height: 80px; text-align: left; }
-.contactMeBox .aboutMeBoxHeader h2 { display: inline-block; margin-top: 47px; margin-left: 65px; color: #ed2c3d; font-weight: bold; font-size: 26px; margin-right: 10px; }
-.contactMeBox .aboutMeBoxHeader span { color: #abb0ac; }
-.contactMeBox h4 { width: 100%; height: 100px; line-height: 100px; text-align: center; font-size: 24px; color: #ed2c3d; margin: 10px 0px 15px 0px; }
-.contactMeBox .contactList { width: 100%; }
-.contactMeBox .contactList li { float: left; width: 25%; height: 80px; margin-left: 4%; background: #f7f7f7; text-align: center; color: #4f4b5c; padding: 2%; border-bottom: 3px solid #ababab; }
-.contactMeBox .contactList li span { font-size: 30px; }
-.contactMeBox .contactList li h5 { margin-top: 8px; text-align: center; display: inline-block; }
-.contactMeBox .contactList li p { font-size: 16px; width: 90%; color: #abb0ac; margin: 22px auto; }
+.contactMeBox {
+  width: 100%;
+  text-align: center; }
+  .contactMeBox .aboutMeBoxHeader {
+    width: 100%;
+    height: 80px;
+    text-align: left; }
+    .contactMeBox .aboutMeBoxHeader h2 {
+      display: inline-block;
+      margin-top: 47px;
+      margin-left: 65px;
+      color: #ed2c3d;
+      font-weight: bold;
+      font-size: 26px;
+      margin-right: 10px; }
+    .contactMeBox .aboutMeBoxHeader span {
+      color: #abb0ac; }
+  .contactMeBox h4 {
+    width: 100%;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    font-size: 24px;
+    color: #ed2c3d;
+    margin: 10px 0px 15px 0px; }
+  .contactMeBox .contactList {
+    width: 100%; }
+    .contactMeBox .contactList li {
+      float: left;
+      width: 25%;
+      height: 80px;
+      margin-left: 4%;
+      background: #f7f7f7;
+      text-align: center;
+      color: #4f4b5c;
+      padding: 2%;
+      border-bottom: 3px solid #ababab; }
+      .contactMeBox .contactList li span {
+        font-size: 30px; }
+      .contactMeBox .contactList li h5 {
+        margin-top: 8px;
+        text-align: center;
+        display: inline-block; }
+      .contactMeBox .contactList li p {
+        font-size: 16px;
+        width: 90%;
+        color: #abb0ac;
+        margin: 22px auto; }
 
-.line { width: 100%; height: 1px; background: #d1d1d1; opacity: 0.6; }
+.line {
+  width: 100%;
+  height: 1px;
+  background: #d1d1d1;
+  opacity: 0.6; }
 
-.line9 { width: 90%; height: 1px; margin: 0 auto; background: #d1d1d1; }
+.line9 {
+  width: 90%;
+  height: 1px;
+  margin: 0 auto;
+  background: #d1d1d1; }
 
-#backToTop { position: fixed; z-index: 10; bottom: 40px; right: 10px; width: 50px; height: 30px; text-align: center; cursor: pointer; display: none; }
-#backToTop span { color: #abb0ac; font-size: 30px; text-shadow: 1px 10px 7px #abb0ac; }
+#backToTop {
+  position: fixed;
+  z-index: 10;
+  bottom: 40px;
+  right: 10px;
+  width: 50px;
+  height: 30px;
+  text-align: center;
+  cursor: pointer;
+  display: none; }
+  #backToTop span {
+    color: #abb0ac;
+    font-size: 30px;
+    text-shadow: 1px 10px 7px #abb0ac; }
 
-footer { width: 100%; text-align: center; padding-bottom: 50px; }
-footer .devInfo { font-size: 12px; margin-top: 5px; }
-footer .devInfo span { font-size: 12px; margin: 0px 5px; }
+footer {
+  width: 100%;
+  text-align: center;
+  padding-bottom: 50px; }
+  footer .devInfo {
+    font-size: 12px;
+    margin-top: 5px; }
+    footer .devInfo span {
+      font-size: 12px;
+      margin: 0px 5px; }
 
 /*# sourceMappingURL=index.css.map */

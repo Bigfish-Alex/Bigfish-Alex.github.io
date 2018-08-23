@@ -124,17 +124,20 @@ header{
             padding: 1px;
             border: 5px solid $mainColor;
             overflow: hidden;
-            position: absolute;
-            left: 30%;
-            top: 160px;
             z-index: 2;
             background: #62616f;
             img{
                 width: 340px;
-                position: absolute;
-                top: 65px;
-                left: 30px;
+                margin: 65px 0px 0px 30px;
             } 
+        }
+        .outPreviewContainer{
+            width: 400px;
+            height: 400px;
+            position: absolute;
+            left: 30%;
+            top: 160px;
+            z-index: 2;
         }
         .linkBall{
             width: 120px;
@@ -187,12 +190,12 @@ header{
         .workNow{
             background: #8dc360;
             position: absolute;
-            top: 160px;
-            left: 69%;
+            top: 50px;
+            left: 85%;
             width: 270px;
             height: 70px;
             right: -120px;
-            z-index: 1;
+            z-index: -1;
             border-radius: 0px 35px 35px 0px;
             transform: rotate(-20deg);
             span{

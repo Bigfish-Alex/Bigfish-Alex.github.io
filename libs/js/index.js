@@ -179,22 +179,55 @@ $(function(){
 	$('.classifyShow').on('click','button',function(){
 		var classify=$(this).html().toLowerCase();
     	$grid.masonry('remove',$('#masonry img')).masonry('layout');
-    	$.get("libs/data/"+classify+".txt",function(res){
-    		var res=JSON.parse(res);
-	    	for(var i=res.length;i>0;i--){
-	    		var oImg=document.createElement('img');
-	    		$(oImg).attr({"src":res[i-1].imgSrc});
-	    		$grid.prepend( oImg )
-			    // add and lay out newly prepended items
-			    .masonry( 'prepended', oImg );
-	    	}
-	    	setTimeout(function(){
-	    		$grid.masonry('layout');
-	    	},100)
-    	})
+    	var loopImg=[];
+    	switch (classify){
+    		case 'all':
+    			loopImg=allImg;
+    			break;
+    		case 'pc':
+    			loopImg=pcImg;
+    			break;
+    		case 'phone':
+    			loopImg=phoneImg;
+    			break;
+    		case 'hybrid':
+    			loopImg=hybridImg;
+    			break;
+    		case 'wx':
+    			loopImg=wxImg;
+    			break;
+    		default:
+    			break;
+    	}
+    	
+	    for(var i=loopImg.length;i>0;i--){
+    		var oImg=document.createElement('img');
+    		$(oImg).attr({"src":loopImg[i-1].imgSrc});
+    		$grid.prepend( oImg )
+		    // add and lay out newly prepended items
+		    .masonry( 'prepended', oImg );
+    	}
+    	setTimeout(function(){
+    		$grid.masonry('layout');
+    	},100)	
+    	
+//  	$.get("libs/data/"+classify+".txt",function(res){
+//  		var res=JSON.parse(res);
+//	    	for(var i=res.length;i>0;i--){
+//	    		var oImg=document.createElement('img');
+//	    		$(oImg).attr({"src":res[i-1].imgSrc});
+//	    		$grid.prepend( oImg )
+//			    // add and lay out newly prepended items
+//			    .masonry( 'prepended', oImg );
+//	    	}
+//	    	setTimeout(function(){
+//	    		$grid.masonry('layout');
+//	    	},100)
+//  	})
 	})
 	
 	$('.classifyShow').on('mousemove','button',function(){
 		$(this).addClass('hover').siblings('button').removeClass('hover');
 	})
 })
+
