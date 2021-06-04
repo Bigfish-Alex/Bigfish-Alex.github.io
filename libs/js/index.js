@@ -113,7 +113,7 @@ $(function(){
 				message="广东省广州市";
 				break;
 			case 4:
-				message="Bigfish-Alex";
+				message="https://github.com/Bigfish-Alex";
 				break;
 			default:
 				break;
